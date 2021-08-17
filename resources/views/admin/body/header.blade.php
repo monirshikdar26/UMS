@@ -115,7 +115,7 @@
 				 <a class="dropdown-item" href="#"><i class="mr-2 ti-wallet text-muted"></i> My Wallet</a>
 				 <a class="dropdown-item" href="#"><i class="mr-2 ti-settings text-muted"></i> Settings</a>
 				 <div class="dropdown-divider"></div>
-				 <a class="dropdown-item" href="#"><i class="mr-2 ti-lock text-muted"></i> Logout</a>
+				 <a class="dropdown-item" href="{{ route('admin.logout') }}"><i class="mr-2 ti-lock text-muted"></i> Logout</a>
 			  </li>
 			</ul>
           </li>

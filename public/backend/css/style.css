@@ -149,7 +149,7 @@ h4, .h4, h5, .h5, h6, .h6 {
   font-size: 1.7142857142857142rem; }
 
 .h4, h4 {
-  font-size: 1.2857142857142858rem; }
+  font-size: 1.2857142857142858r#737373em; }
 
 .h5, h5 {
   font-size: 1.1428571428571428rem; }
@@ -786,7 +786,7 @@ hr {
   vertical-align: bottom; }
 
 /*******************
-Padding property 
+Padding property
 *******************/
 .p-0 {
   padding: 0px !important; }
@@ -4653,7 +4653,7 @@ Padding property
     padding-top: 100px !important;
     padding-bottom: 100px !important; } }
 /*******************
-Margin property 
+Margin property
 *******************/
 .m-0 {
   margin: 0px !important; }
@@ -8520,7 +8520,7 @@ Margin property
     margin-top: 100px !important;
     margin-bottom: 100px !important; } }
 /*******************
-Width property 
+Width property
 *******************/
 .w-0 {
   width: 0px; }
@@ -10899,7 +10899,7 @@ Width property
   .max-w-lg-auto {
     max-width: auto; } }
 /*******************
-Height property 
+Height property
 *******************/
 .h-0 {
   height: 0px !important; }
@@ -13479,7 +13479,7 @@ Height property
     -webkit-transition: margin-left 0.3s ease-in-out;
     transition: margin-left 0.3s ease-in-out;
     margin-left: 280px;
-    background: #272e48;
+    background: #ffffff;
     min-height: 70px;
     padding: 0;
     -webkit-box-shadow: 0 0 21px 0 rgba(89, 102, 122, 0.1);
@@ -14072,7 +14072,7 @@ body .main-header .navbar .nav > li.search-box > a:hover, body .main-header .nav
   -o-transition: -o-transform .3s ease-in-out, width .3s ease-in-out;
   transition: transform .3s ease-in-out, width .3s ease-in-out; }
   .main-sidebar .sidebar-footer {
-    background-color: #ffffff; }
+    background-color: #fff; }
 
 .sidebar-footer {
   position: fixed;
