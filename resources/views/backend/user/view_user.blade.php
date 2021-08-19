@@ -19,7 +19,7 @@
            <div class="box">
               <div class="box-header with-border">
                 <h3 class="box-title">User Table</h3>
-                <a href="" style="float: right;" class="mb-5 btn btn-rounded btn-success">Add User</a>
+                <a href="{{ route('user.add') }}" style="float: right;" class="mb-5 btn btn-rounded btn-success">Add User</a>
               </div>
               <!-- /.box-header -->
               <div class="box-body">
@@ -36,11 +36,11 @@
                           </tr>
                       </thead>
                       <tbody>
-                          @foreach ($UserData as $item)
+                          @foreach ($UserData as $key => $item)
 
                           <tr>
-                              <td>{{ $item->id }}</td>
-                              <td></td>
+                              <td>{{ $key+1 }}</td>
+                              <td>{{ $item->usertype }}</td>
                               <td>{{ $item->name }}</td>
                               <td>{{ $item->email }}</td>
                               <td>
