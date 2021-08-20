@@ -11,7 +11,7 @@
 				  <!-- logo for regular state and mobile devices -->
 					 <div class="d-flex align-items-center justify-content-center">
 						  <img src="{{ asset('backend/images/seu.png') }}" style="width: 30px; height:30px">
-						  <h3><b>UMS</b> Admin</h3>
+						  <h3><b>UMS</b>  Admin</h3>
 					 </div>
 				</a>
 			</div>
@@ -43,15 +43,14 @@
 
         <li class="treeview">
           <a href="#">
-            <i data-feather="mail"></i> <span>Mailbox</span>
+            <i data-feather="mail"></i> <span>Manage Profile</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-right pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="mailbox_inbox.html"><i class="ti-more"></i>Inbox</a></li>
-            <li><a href="mailbox_compose.html"><i class="ti-more"></i>Compose</a></li>
-            <li><a href="mailbox_read_mail.html"><i class="ti-more"></i>Read</a></li>
+            <li><a href="{{ route('profile.view') }}"><i class="ti-more"></i>Your Profile</a></li>
+            <li><a href=""><i class="ti-more"></i>Change Password</a></li>
           </ul>
         </li>
 
