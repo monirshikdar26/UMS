@@ -39,5 +39,7 @@ Route::prefix('users')->group(function(){
 
 
 Route::prefix('profile')->group(function(){
-    Route::get('/profile',[ProfileController::class,'ProfileView'])->name('profile.view');
+    Route::get('/view',[ProfileController::class,'ProfileView'])->name('profile.view');
+    Route::get('/edit',[ProfileController::class,'ProfileEdit'])->name('profile.edit');
+    Route::post('/store',[ProfileController::class,'ProfileStore'])->name('profile.store');
 });
