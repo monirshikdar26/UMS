@@ -17,7 +17,7 @@
                               <i class="mr-0 text-primary font-size-24 mdi mdi-account-multiple"></i>
                           </div>
                           <div>
-                              <p class="mt-20 mb-0 text-mute font-size-16">New Customers</p>
+                              <p class="mt-20 mb-0 text-mute font-size-16">Total Users</p>
                               <h3 class="mb-0 text-white font-weight-500">3400 <small class="text-success"><i class="fa fa-caret-up"></i> +2.5%</small></h3>
                           </div>
                       </div>
@@ -30,7 +30,7 @@
                               <i class="mr-0 text-warning font-size-24 mdi mdi-car"></i>
                           </div>
                           <div>
-                              <p class="mt-20 mb-0 text-mute font-size-16">Sold Cars</p>
+                              <p class="mt-20 mb-0 text-mute font-size-16">Total Students</p>
                               <h3 class="mb-0 text-white font-weight-500">3400 <small class="text-success"><i class="fa fa-caret-up"></i> +2.5%</small></h3>
                           </div>
                       </div>
@@ -43,7 +43,7 @@
                               <i class="mr-0 text-info font-size-24 mdi mdi-sale"></i>
                           </div>
                           <div>
-                              <p class="mt-20 mb-0 text-mute font-size-16">Sales Lost</p>
+                              <p class="mt-20 mb-0 text-mute font-size-16">Total Employees</p>
                               <h3 class="mb-0 text-white font-weight-500">$1,250 <small class="text-danger"><i class="fa fa-caret-down"></i> -0.5%</small></h3>
                           </div>
                       </div>
@@ -56,7 +56,7 @@
                               <i class="mr-0 text-danger font-size-24 mdi mdi-phone-incoming"></i>
                           </div>
                           <div>
-                              <p class="mt-20 mb-0 text-mute font-size-16">Inbound Call</p>
+                              <p class="mt-20 mb-0 text-mute font-size-16">Total Users</p>
                               <h3 class="mb-0 text-white font-weight-500">1,460 <small class="text-danger"><i class="fa fa-caret-up"></i> -1.5%</small></h3>
                           </div>
                       </div>
