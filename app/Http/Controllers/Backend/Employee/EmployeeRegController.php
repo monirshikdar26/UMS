@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers\Backend\Employee;
 use App\Models\User;
-use Barryvdh\DomPDF\Facade\PDF;
 use App\Models\Designation;
 use Illuminate\Http\Request;
 use App\Models\EmployeeSalaryLog;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
+use niklasravnsborg\LaravelPdf\Facades\Pdf;
 
 class EmployeeRegController extends Controller
 {
