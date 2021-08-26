@@ -20,7 +20,7 @@
 
   </head>
 
-<body class="fixed hold-transition gray-skin sidebar-mini theme-primary">
+<body class="fixed hold-transition dark-skin sidebar-mini theme-primary">
 
 <div class="wrapper">
 

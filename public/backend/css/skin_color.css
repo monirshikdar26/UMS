@@ -8,6 +8,7 @@ File: scss
 /*Theme Colors*/
 /*Lite color*/
 /*Theme Colors For Dark*/
+
 /*---light skin---*/
 .light-skin .main-header li.user-header {
   background-color: #ffffff; }
@@ -28,7 +29,7 @@ File: scss
 .light-skin .main-sidebar {
   -webkit-box-shadow: 0 0 21px 0 rgba(89, 102, 122, 0.1);
   box-shadow: 0 0 21px 0 rgba(89, 102, 122, 0.1);
-  background-color: #ffffff; }
+  background-color: #acb5d6; }
 .light-skin .user-panel > .info {
   color: #ffffff; }
   .light-skin .user-panel > .info > a {
@@ -142,7 +143,7 @@ body.dark-skin {
     color: #8a99b5;
     background-color: #222e4c; }
   body.dark-skin .main-sidebar .sidebar-footer {
-    background-color: #272e48; }
+    background-color:#272e48;  }
   body.dark-skin .user-profile .ulogo h3 {
     color: #bdd1f8; }
 

@@ -1,7 +1,12 @@
+@php
+  $prefix = Request::route()->getPrefix();
+  $route = Route::current()->getName();
+@endphp
 
 
 
-  <aside class="main-sidebar">
+
+  <aside class="main-sidebar light-skin">
     <!-- sidebar-->
     <section class="sidebar">
 
@@ -20,14 +25,14 @@
       <!-- sidebar menu-->
       <ul class="sidebar-menu" data-widget="tree">
 
-		<li>
-          <a href="index.html">
+		<li class="{{ ($route == 'dashboard'?'active':'') }}">
+          <a href="{{ route('dashboard') }}">
             <i data-feather="pie-chart"></i>
 			<span>Dashboard</span>
           </a>
         </li>
 
-        <li class="treeview">
+        <li class="treeview {{ ($prefix == '/users'?'active':'') }}">
           <a href="#">
             <i data-feather="link"></i>
             <span>Manage User</span>
@@ -41,7 +46,7 @@
           </ul>
         </li>
 
-        <li class="treeview">
+        <li class="treeview {{ ($prefix == '/profile'?'active':'') }}">
           <a href="#">
             <i data-feather="link"></i> <span>Manage Profile</span>
             <span class="pull-right-container">
@@ -55,7 +60,7 @@
         </li>
 
 
-        <li class="treeview">
+        <li class="treeview {{ ($prefix == '/employee'?'active':'') }}">
             <a href="#">
               <i data-feather="link"></i>
               <span>Manage Employee</span>
@@ -64,9 +69,10 @@
               </span>
             </a>
             <ul class="treeview-menu">
+              
               <li><a href="{{ route('employee.reg.view') }}"><i class="ti-more"></i>View Employee</a></li>
               <li><a href="{{ route('employee.reg.add') }}"><i class="ti-more"></i>Add Employee</a></li>
-            </ul>
+              
           </li>
 
 

@@ -5,7 +5,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Backend\Employee\EmployeeRegController;
 use App\Http\Controllers\Backend\ProfileController;
 use App\Http\Controllers\Backend\UserController;
-
+use App\Http\Controllers\PDFController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,7 +28,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 Route::get('/admin/logout',[AdminController::class,'Logout'])->name('admin.logout');
 
 // User Management All group Routes
-Route::prefix('users')->group(function(){
+Route::prefix('users')->group(function(){ 
     Route::get('/view',[UserController::class,'UserView'])->name('user.view');
     Route::get('/add',[UserController::class,'UserAdd'])->name('user.add');
     Route::post('/store',[UserController::class,'UserStore'])->name('user.store');
@@ -54,3 +54,4 @@ Route::prefix('employee')->group(function(){
     Route::post('reg/employee/update/{id}',[EmployeeRegController::class,'EmployeeUpdate'])->name('employee.reg.update');
     Route::get('reg/employee/details/{id}',[EmployeeRegController::class,'EmployeeDetails'])->name('employee.reg.details');
 });
+ 
