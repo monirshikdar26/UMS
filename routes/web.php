@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Backend\Employee\EmployeeRegController;
 use App\Http\Controllers\Backend\ProfileController;
+use App\Http\Controllers\Backend\Student\StuRegController;
 use App\Http\Controllers\Backend\UserController;
 use App\Http\Controllers\PDFController;
 /*
@@ -43,6 +44,11 @@ Route::prefix('profile')->group(function(){
     Route::get('/view',[ProfileController::class,'ProfileView'])->name('profile.view');
     Route::get('/edit',[ProfileController::class,'ProfileEdit'])->name('profile.edit');
     Route::post('/store',[ProfileController::class,'ProfileStore'])->name('profile.store');
+});
+
+
+Route::prefix('student')->group(function(){
+    Route::get('reg/view',[StuRegController::class,'StuView'])->name('student.reg.view');
 });
 
 

@@ -107,7 +107,7 @@
 	      <!-- User Account-->
           <li class="dropdown user user-menu">
 			<a href="#" class="p-0 rounded waves-effect waves-light dropdown-toggle" data-toggle="dropdown" title="User">
-				<img src="{{ (!empty($user->image))? url('upload/user_images/'.$user->image): url('upload/no_image.jpg') }}" alt="User Avatar">
+				<img id="showImage" src="{{ (!empty($user->image))? url('upload/user_images/'.$user->image): url('upload/no_image.jpg') }}">
 			</a>
 			<ul class="dropdown-menu animated flipInX">
 			  <li class="user-body">

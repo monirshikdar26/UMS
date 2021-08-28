@@ -59,6 +59,20 @@
           </ul>
         </li>
 
+        <li class="treeview {{ ($prefix == '/student'?'active':'') }}">
+          <a href="#">
+            <i data-feather="link"></i> <span>Manage Student</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i> 
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{{ route('student.reg.view') }}"><i class="ti-more"></i>Student Registration</a></li>
+            <li><a href=""><i class="ti-more"></i>Student Semester Fee</a></li>
+            
+          </ul>
+        </li>
+
 
         <li class="treeview {{ ($prefix == '/employee'?'active':'') }}">
             <a href="#">
