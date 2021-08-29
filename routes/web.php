@@ -1,12 +1,15 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AdminController;
-use App\Http\Controllers\Backend\Employee\EmployeeRegController;
-use App\Http\Controllers\Backend\ProfileController;
-use App\Http\Controllers\Backend\Student\StuRegController;
-use App\Http\Controllers\Backend\UserController;
 use App\Http\Controllers\PDFController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\Backend\UserController;
+use App\Http\Controllers\Backend\ProfileController;
+use App\Http\Controllers\Backend\Course\CourseController;
+use App\Http\Controllers\Backend\Student\StuRegController;
+use App\Http\Controllers\Backend\Faculty\FacultyController;
+use App\Http\Controllers\Backend\Employee\EmployeeRegController;
+use App\Http\Controllers\Backend\Department\DepartmentController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -61,3 +64,17 @@ Route::prefix('employee')->group(function(){
     Route::get('reg/employee/details/{id}',[EmployeeRegController::class,'EmployeeDetails'])->name('employee.reg.details');
 });
  
+Route::prefix('faculty')->group(function(){
+    Route::get('view',[FacultyController::class,'FacultyView'])->name('faculty.view');
+    Route::get('add',[FacultyController::class,'FacultyAdd'])->name('faculty.add');
+});
+
+Route::prefix('course')->group(function(){
+    Route::get('view',[CourseController::class,'CourseView'])->name('course.view');
+    Route::get('add',[CourseController::class,'CourseAdd'])->name('course.add');
+});
+
+Route::prefix('department')->group(function(){
+    Route::get('view',[DepartmentController::class,'DepartmentView'])->name('department.view');
+    Route::get('add',[DepartmentController::class,'DepartmentAdd'])->name('department.add');
+});

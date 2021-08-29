@@ -90,6 +90,22 @@
           </li>
 
 
+          <li class="treeview {{ ($prefix == '/faculty'?'active':'') }}">
+            <a href="#">
+              <i data-feather="link"></i>
+              <span>Manage Faculty</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-right pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              
+              <li><a href="{{ route('faculty.view') }}"><i class="ti-more"></i>View Faculty</a></li>
+              <li><a href="{{ route('faculty.add') }}"><i class="ti-more"></i>Add Faculty</a></li>
+              
+          </li>
+
+
 
 		<li>
           <a href="auth_login.html">
