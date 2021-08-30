@@ -18,7 +18,7 @@
 			 <div class="box">
 				<div class="box-header with-border">
 				    <h3 class="box-title">Employee List</h3>
-	                <a href="{{ route('employee.reg.add') }}" style="float: right;" class="mb-5 btn btn-rounded btn-success"> Add Employee</a>
+	                <a href="{{ route('employee.add') }}" style="float: right;" class="mb-5 btn btn-rounded btn-success"> Add Employee</a>
 
 				</div>
 				<!-- /.box-header -->
@@ -55,7 +55,7 @@
                             <td> {{ $employee->code }}</td>
                             @endif
                             <td>
-                            <a href="{{ route('employee.registration.edit',$employee->id) }}" class="btn btn-info">Edit</a>
+                            <a href="{{ route('employee.edit',$employee->id) }}" class="btn btn-info">Edit</a>
                             <a target="_blank" href="{{ route('employee.registration.details',$employee->id) }}" class="btn btn-danger">Details</a>
 
                             </td>

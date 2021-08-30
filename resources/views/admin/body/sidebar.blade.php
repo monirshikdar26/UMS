@@ -68,8 +68,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="{{ route('student.reg.view') }}"><i class="ti-more"></i>Student Registration</a></li>
-            <li><a href=""><i class="ti-more"></i>Student Semester Fee</a></li>
-            
+            <li><a href=""><i class="ti-more"></i>Student Semester Fee</a></li> 
           </ul>
         </li>
 
@@ -83,11 +82,10 @@
               </span>
             </a>
             <ul class="treeview-menu">
-              
-              <li><a href="{{ route('employee.reg.view') }}"><i class="ti-more"></i>View Employee</a></li>
-              <li><a href="{{ route('employee.reg.add') }}"><i class="ti-more"></i>Add Employee</a></li>
-              
-          </li>
+              <li><a href="{{ route('employee.view') }}"><i class="ti-more"></i>View Employee</a></li>
+              <li><a href="{{ route('employee.add') }}"><i class="ti-more"></i>Add Employee</a></li>
+            </ul>
+        </li>
 
 
           <li class="treeview {{ ($prefix == '/faculty'?'active':'') }}">
@@ -102,7 +100,39 @@
               
               <li><a href="{{ route('faculty.view') }}"><i class="ti-more"></i>View Faculty</a></li>
               <li><a href="{{ route('faculty.add') }}"><i class="ti-more"></i>Add Faculty</a></li>
+            </ul>
+          </li>
+
+
+
+          <li class="treeview {{ ($prefix == '/course'?'active':'') }}">
+            <a href="#">
+              <i data-feather="link"></i>
+              <span>Manage Course</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-right pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
               
+              <li><a href="{{ route('course.view') }}"><i class="ti-more"></i>View Course</a></li>
+              <li><a href="{{ route('course.add') }}"><i class="ti-more"></i>Add Course</a></li>
+            </ul>
+          </li>
+
+          <li class="treeview {{ ($prefix == '/department'?'active':'') }}">
+            <a href="#">
+              <i data-feather="link"></i>
+              <span>Manage Department</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-right pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              
+              <li><a href="{{ route('department.view') }}"><i class="ti-more"></i>View Department</a></li>
+              <li><a href="{{ route('department.add') }}"><i class="ti-more"></i>Add Department</a></li>
+            </ul>
           </li>
 
 

@@ -734,7 +734,7 @@ body.dark-skin {
     .dark-skin .sidebar-menu > li.treeview.menu-open > a {
       opacity: 1; }
   .dark-skin .sidebar-menu > li:hover > a {
-    color: #8a99b5; }
+    color: #db8b21; }
     .dark-skin .sidebar-menu > li:hover > a > i {
       color: #8a99b5; }
   .dark-skin .sidebar-menu > li.active > a {
@@ -753,7 +753,7 @@ body.dark-skin {
     height: 0;
     border-style: solid;
     border-width: 22px 10px 22px 0;
-    border-color: transparent #3a4e80 transparent transparent !important; }
+    border-color: transparent #a19c1f transparent transparent !important; }
   .dark-skin .sidebar-menu > li.menu-open > a {
     color: #ffffff; }
     .dark-skin .sidebar-menu > li.menu-open > a > i {
