@@ -107,11 +107,11 @@
 	      <!-- User Account-->
           <li class="dropdown user user-menu">
 			<a href="#" class="p-0 rounded waves-effect waves-light dropdown-toggle" data-toggle="dropdown" title="User">
-				<img id="showImage" src="{{ (!empty($user->image))? url('upload/user_images/'.$user->image): url('upload/no_image.jpg') }}">
+				<img src="{{ (!empty($user->image))? asset('upload/user_images/'.$user->image): asset('upload/no_image.jpg') }}">
 			</a>
 			<ul class="dropdown-menu animated flipInX">
 			  <li class="user-body">
-				 <a class="dropdown-item" href="#"><i class="mr-2 ti-user text-muted"></i> Profile</a>
+				 <a class="dropdown-item" href="{{ route('profile.view') }}"><i class="mr-2 ti-user text-muted"></i> Profile</a>
 				 <a class="dropdown-item" href="#"><i class="mr-2 ti-wallet text-muted"></i> My Wallet</a>
 				 <a class="dropdown-item" href="#"><i class="mr-2 ti-settings text-muted"></i> Settings</a>
 				 <div class="dropdown-divider"></div>
